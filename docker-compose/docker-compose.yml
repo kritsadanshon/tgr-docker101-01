@@ -26,7 +26,7 @@ services:
       - private
     volumes:
       - ./database/data:/var/lib/mysql:rw
-      - ./database/conf:/etc/mysql/conf.d
+      - ./database/conf:/etc/mysql/conf.d:rw
     environment:
       - "MYSQL_DATABASE=mydb"
       - "MYSQL_ROOT_PASSWORD=secret"
